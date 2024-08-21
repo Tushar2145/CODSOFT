@@ -1,0 +1,399 @@
+*{
+    background-color: black;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: none;
+}
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.navlist li{
+    color:yellow;
+    list-style: none;
+
+}
+.navlist{
+    display: flex;
+    gap: 4rem;
+    background-color:none;
+    height: 15vh;
+    width: 110%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color:yellow;
+    position: relative;
+
+}
+.left-container,.right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+.left-container{
+     width: 70% ;
+    padding-left: 3rem;
+
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    color:rgb(0, 255, 229);
+    
+  
+}
+.icons :hover{
+ background: transparent;
+ color: yellow;
+ 
+}
+.content{
+    margin-left: 4rem;
+}
+.content .intro{
+    font-size: 3rem;
+    color: #FFF;
+}
+.content .intro span{
+    color: yellow;
+
+}
+.content h1{
+    font-size: 4rem;
+    color: white;
+
+}
+
+.btn button{
+    border: .1rem solid #5db9ee;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+    background:#5db9ee ;
+    color: black;
+}
+
+
+button:hover{
+    background: transparent;
+    color:red ;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top:50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+
+
+}
+
+.circle{
+    background: white;
+    width: 30rem;
+    background-image:url("image/me.jpg");
+    background-size: 99%;
+    background-repeat: no-repeat;
+    border: .5rem solid white;
+    box-shadow: 
+    0 0 1rem #FFF,
+    inset 0 0 1rem #FFF,
+    0 0 2rem #3877FF,
+    inset 0 0 2rem #3877FF,
+    0 0 3rem #3877FF,
+    inset 0 0 3rem #3877FF
+    ;
+
+}
+.navlist li a::after, .navlist .active::after{
+    content: "";
+    position: absolute;
+    background:white;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+.navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* about-section */
+body {
+    font-family: none;
+    box-sizing: border-box;
+    background-color:black;
+    color:white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.profile-section {
+    width: 50%;
+    font-size: 13px;
+    text-align: justify;
+    padding: 18px;
+}
+.profile-section span{
+    color:yellow;
+}
+.profile-section img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 30px;
+}
+
+.about-section, .skills-section {
+    width: 60%;
+    font-size: 50px;
+    padding: 20px;
+    background-color:black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-section h2, .skills-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:yellow;
+}
+
+.about-section p {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.about-section ul {
+    background-color: yellowgreen;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.about-section ul li {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.skills-section .skill {
+    margin-bottom: 20px;
+}
+
+.skills-section .skill span {
+    display: block;
+    width: 200px;
+    font-size: 16px;
+}
+.progress-bar {
+    width: 100%;
+    background-color: none;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress {
+    height: 15px;
+    background-color:beige;
+}
+/* Project-section */
+body {
+    font-family:none;
+    background-color:black;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.My-Project {
+    text-align: center;
+    padding: 60px 30px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    display: flow-root;
+}
+
+p {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.Projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+.Project-card {
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px yellow;
+    transition: transform 0.4s ease;
+}
+
+.Project-card:hover {
+    transform: scale(1.05);
+}
+
+.Project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.Project-card h2 {
+    font-size: 1.5em;
+    font:message-box;
+    margin: 15px 10px;
+}
+
+.Project-card p {
+    font-size: 1rem;
+    margin: 10px;
+    color: red;
+
+}
+/* resume-section */
+*{
+    background-size: 99%;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: none;
+}
+
+.resume-section {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 1.6em; 
+}
+.education {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+   
+}
+
+.card {
+    background:none;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+}
+.card h2 {
+    color:yellow;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+.card p {
+    margin: 5px 0;
+}
+.btnn button{
+    border: .1rem solid #5db9ee;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+    background:orange ;
+    color: black;
+}
+.btnn{
+    text-align: center;
+}
+button:hover{
+    background-color: yellow;
+}
+/* contact-info */
+#{
+    background-color: black;
+    color:white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contact{
+    text-align: center;
+}
+h1{
+    font-size: 2em;
+    margin-bottom: .2em;
+}
+p{
+    margin-bottom: 2em;
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.contact-item{
+    background-color: black;
+    border-radius: 10px;
+    padding: 1em;
+    width: 160px;
+    text-align: center;
+}
+.icon{
+    font-size: 2em;
+    margin-bottom: .5em;
+    color:yellow;
+}
+.text h3{
+    margin: .5em 0;
+    font-size: 1em;
+    color: yellow;
+}
+.footer-content{
+    color: yellow;
+    text-align-last: left;
+}

@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    margin: 0;
+    background-image: url(natt.jpg);
+}
+.calculator{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 15px; 
+    max-width: 200px;
+}
+.display{
+    background:white;
+    color:black;
+    padding: 20px;
+    text-align: right;
+    font-size: 2em;
+    border-radius: 5px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.btn{
+    background:yellow;
+    border: none;
+    padding: 20px;
+    font-size: 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: lemonchiffon;
+}
+.operator{
+    background:lemonchiffon ;
+}
+.operator:hover{
+    background:lightpink;
+}
+.equal{
+    background: lemonchiffon;
+}
+.equal:hover{
+    background:lightpink ;
+}
+.clear{
+    background: crimson;
+    color: white;
+}
+.clear:hover{
+    background: transparent;
+}
